@@ -73,23 +73,20 @@ main p {
 
 .job-card {
     background-color: #ffffff;
-    padding: 30px;
-    margin-top: 30px;
+    padding: 20px;
+    margin-top: 20px;
     border: 1px solid #dddddd;
     border-radius: 8px;
 }
 
 .job-card h3 {
     margin-top: 0;
-    font-size: 26px;
+    margin-bottom: 8px;
 }
 
-.job-description {
-    line-height: 1.6;
-}
-
-.job-card a {
-    display: inline-block;
-    margin-top: 10px;
+.job-details {
+    display: flex;
+    gap: 20px;
+    margin: 15px 0;
 }
 /* end of find jobs page */
