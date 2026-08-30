@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Jobs | Flick</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -19,13 +20,44 @@
             <a href="saved.html">Saved Jobs</a>
             <a href="contact.html">Contact</a>
         </div>
+        
     </nav>
-
+        
     <main class="jobs-page">
     <h2>Find Jobs</h2>
 
     <p>Explore job opportunities that suit you.</p>
 
+        
+    <section class="job-search">
+
+    <div class="search-bar">
+
+        <div class="search-field">
+            <label for="keyword-search">Job keyword</label>
+            <input
+                type="text"
+                id="keyword-search"
+                placeholder="e.g. Retail Assistant"
+            >
+        </div>
+
+        <div class="search-field">
+            <label for="location-search">Location</label>
+            <input
+                type="text"
+                id="location-search"
+                placeholder="e.g. Auckland"
+            >
+        </div>
+
+        <button class="search-button" type="button">
+            Search
+        </button>
+
+    </div>
+
+</section>
     <div class="job-listings">
 
     <article class="job-card">
@@ -100,6 +132,9 @@
     <a href="#">View Job</a>
     </article>
     </div>
+
+
+        
 </main>
 
 </body>

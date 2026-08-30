@@ -103,4 +103,57 @@ main p {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+/* Job search */
+
+.job-search {
+    margin-bottom: 30px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid #cccccc;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.search-field {
+    flex: 1;
+    padding: 12px 15px;
+}
+
+.search-field + .search-field {
+    border-left: 1px solid #dddddd;
+}
+
+.search-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.search-field input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.search-button {
+    border: none;
+    padding: 0 25px;
+    background-color: #333333;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #555555;
+}
 /* end of find jobs page */
