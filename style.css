@@ -97,4 +97,10 @@ main p {
     border-radius: 20px;
     font-size: 14px;
 }
+
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
 /* end of find jobs page */
