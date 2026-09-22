@@ -190,3 +190,115 @@ main p {
     font-size: 24px;
     cursor: pointer;
 }
+
+/* Homepage introduction */
+
+.home-page {
+    padding: 0;
+    max-width: none;
+}
+
+.home-intro {
+    background-color: #edf2e5;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.intro-label {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #6b8e23;
+}
+
+.home-intro h2 {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.intro-description {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.home-search {
+    display: flex;
+    align-items: stretch;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+}
+
+
+/* Homepage job previews */
+
+.home-jobs {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.home-jobs h2,
+.home-how h2 {
+    font-size: 32px;
+}
+
+.home-job-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.home-job-card {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+}
+
+.home-job-card h3 {
+    margin-top: 0;
+}
+
+/* Homepage buttons */
+
+.home-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #333333;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.home-button:hover {
+    background-color: #555555;
+}
+
+/* How Flick works */
+
+.home-how {
+    background-color: #edf2e5;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.how-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.how-steps h3 {
+    color: #6b8e23;
+}

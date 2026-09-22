@@ -1,10 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flick - Job Finder</title>
-    
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,11 +25,120 @@
     </nav>
 
     <!-- Homepage -->
-    <main>
-        <h2>Find a job that fits your life.</h2>
-        <p>
-            Find suitable job opportunities quickly and easily.
-        </p>
+    <main class="home-page">
+
+        <!-- Homepage introduction -->
+        <section class="home-intro">
+
+            <p class="intro-label">
+                YOUR NEXT OPPORTUNITY STARTS HERE
+            </p>
+
+            <h2>Find a job that fits your life.</h2>
+
+            <p class="intro-description">
+                Explore job opportunities that match your interests
+                and location. Finding your next job starts here.
+            </p>
+
+            <!-- Homepage search -->
+            <form action="jobs.html" method="get" class="home-search">
+
+                <div class="search-field">
+                    <label for="home-keyword">Job keyword</label>
+
+                    <input
+                        type="text"
+                        id="home-keyword"
+                        name="keyword"
+                        placeholder="e.g. Retail Assistant"
+                    >
+                </div>
+
+                <div class="search-field">
+                    <label for="home-location">Location</label>
+
+                    <input
+                        type="text"
+                        id="home-location"
+                        name="location"
+                        placeholder="e.g. Auckland"
+                    >
+                </div>
+
+                <button type="submit" class="search-button">
+                    Find Jobs
+                </button>
+
+            </form>
+
+        </section>
+
+<!-- Job previews -->
+<section class="home-jobs">
+
+    <h2>Explore Job Opportunities</h2>
+    <p>Have a look at some of the jobs available on Flick.</p>
+
+    <div class="home-job-list">
+
+        <div class="home-job-card">
+            <h3>Retail Assistant</h3>
+            <p>Example Store</p>
+            <span class="job-detail">Auckland</span>
+        </div>
+
+        <div class="home-job-card">
+            <h3>Cafe Team Member</h3>
+            <p>Example Cafe</p>
+            <span class="job-detail">Takapuna</span>
+        </div>
+
+        <div class="home-job-card">
+            <h3>Supermarket worker</h3>
+            <p>Example Supermarket</p>
+            <span class="job-detail">Glen Innes</span>
+        </div>
+
+        <div class="home-job-card">
+            <h3>Warehouse worker</h3>
+            <p>Example Warehouse</p>
+            <span class="job-detail">Ponsonby</span>
+        </div>
+
+    </div>
+
+    <a href="jobs.html" class="home-button">
+        View All Jobs
+    </a>
+
+</section>
+
+<!-- How Flick works -->
+<section class="home-how">
+
+    <h2>How Flick Works</h2>
+
+    <div class="how-steps">
+
+        <div>
+            <h3>1. Search</h3>
+            <p>Enter a job keyword and location to find suitable jobs.</p>
+        </div>
+
+        <div>
+            <h3>2. Explore</h3>
+            <p>Compare job listings and click on a job for more information.</p>
+        </div>
+
+        <div>
+            <h3>3. Find Your Fit</h3>
+            <p>Look through the available opportunities and find a job that interests you.</p>
+        </div>
+
+    </div>
+
+</section>
     </main>
 
 </body>

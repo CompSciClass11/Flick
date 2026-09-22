@@ -3,25 +3,42 @@ const locationInput = document.querySelector("#location-search");
 const searchButton = document.querySelector(".search-button");
 const jobCards = document.querySelectorAll(".job-card");
 
-searchButton.addEventListener("click", function () {
+function searchJobs() {
     const keyword = keywordInput.value.trim().toLowerCase();
     const location = locationInput.value.trim().toLowerCase();
 
     jobCards.forEach(function (jobCard) {
-        
-    const jobText = jobCard.textContent.toLowerCase();
-    const jobLocation = jobCard.dataset.location.toLowerCase();
+        const jobText = jobCard.textContent.toLowerCase();
+        const jobLocation = jobCard.dataset.location.toLowerCase();
 
-    const matchesKeyword = jobText.includes(keyword);
-    const matchesLocation = jobLocation.includes(location);
+        const matchesKeyword = jobText.includes(keyword);
+        const matchesLocation = jobLocation.includes(location);
 
         const matchesSearch = matchesKeyword && matchesLocation;
 
         jobCard.hidden = !matchesSearch;
-
-        
     });
-});
+}
+
+
+searchButton.addEventListener("click", searchJobs);
+
+
+const searchParams = new URLSearchParams(window.location.search);
+
+const homeKeyword = searchParams.get("keyword");
+const homeLocation = searchParams.get("location");
+
+
+if (homeKeyword !== null || homeLocation !== null) {
+    keywordInput.value = homeKeyword || "";
+    locationInput.value = homeLocation || "";
+
+    searchJobs();
+}
+
+
+
 const jobDialog = document.querySelector("#job-dialog");
 const dialogTitle = document.querySelector("#dialog-title");
 const dialogCompany = document.querySelector("#dialog-company");
