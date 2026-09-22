@@ -157,3 +157,36 @@ main p {
     background-color: #555555;
 }
 /* end of find jobs page */
+
+/* Job dialog */
+
+.job-card {
+    cursor: pointer;
+}
+
+#job-dialog {
+    width: min(500px, 90%);
+    border: none;
+    border-radius: 16px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+#job-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#job-dialog h2 {
+    margin-top: 0;
+}
+
+.close-dialog {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}

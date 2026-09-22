@@ -60,25 +60,39 @@
 </section>
     <div class="job-listings">
 
-    <article class="job-card">
-        <h3>Retail Assistant</h3>
+   <article
+    class="job-card"
+    data-title="Retail Assistant"
+    data-company="Example Store"
+    data-location="Auckland"
+    data-type="Part-time"
+    data-description="Help customers, organise stock, and keep the store tidy.">
 
-        <p>Example Store</p>
+    <h3>Retail Assistant</h3>
 
-        <div class="job-details">
-            <span class="job-detail">
-                <strong>Location:</strong> Auckland
-            </span>
+    <p>Example Store</p>
 
-            <span class="job-detail">
-                <strong>Type:</strong> Part-time
-            </span>
-        </div>
+    <div class="job-details">
+        <span class="job-detail">
+            <strong>Location:</strong> Auckland
+        </span>
 
-        <a href="#">View Job</a>
-    </article>
+        <span class="job-detail">
+            <strong>Type:</strong> Part-time
+        </span>
+    </div>
 
-    <article class="job-card">
+    <a href="#">View Job</a>
+</article>
+
+    <article
+    class="job-card"
+    data-title="Cafe Team Member"
+    data-company="Example Cafe"
+    data-location="Takapuna"
+    data-type="Part-time"
+    data-description="Serve customers, prepare food and drinks, and help keep the cafe clean.">
+
     <h3>Cafe Team Member</h3>
 
     <p>Example Cafe</p>
@@ -96,7 +110,14 @@
         <a href="#">View Job</a>
     </article>
 
-    <article class="job-card">
+    <article
+    class="job-card"
+    data-title="Supermarket worker"
+    data-company="Example Supermarket"
+    data-location="Glen Innes"
+    data-type="Part-time"
+    data-description="Help customers, restock shelves, and keep the supermarket organised.">
+
     <h3>Supermarket worker</h3>
 
     <p>Example Supermarket</p>
@@ -114,7 +135,14 @@
     <a href="#">View Job</a>
     </article>
 
-    <article class="job-card">
+    <article
+    class="job-card"
+    data-title="Warehouse worker"
+    data-company="Example Warehouse"
+    data-location="Ponsonby"
+    data-type="Full-time"
+    data-description="Help organise stock, prepare orders, and keep the warehouse tidy.">
+    
     <h3>Warehouse worker</h3>
 
     <p>Example Warehouse</p>
@@ -137,6 +165,37 @@
         
 </main>
 
+<dialog id="job-dialog" class="job-dialog" aria-labelledby="dialog-title">
+
+    <button
+        type="button"
+        class="close-dialog"
+        aria-label="Close job details"
+    >
+        ×
+    </button>
+
+    <h2 id="dialog-title"></h2>
+
+    <p id="dialog-company"></p>
+
+    <div class="job-details">
+        <span class="job-detail">
+            <strong>Location:</strong>
+            <span id="dialog-location"></span>
+        </span>
+
+        <span class="job-detail">
+            <strong>Type:</strong>
+            <span id="dialog-type"></span>
+        </span>
+    </div>
+
+    <h3>About the job</h3>
+
+    <p id="dialog-description"></p>
+
+</dialog>
 
 <script src="script.js"></script>
 
