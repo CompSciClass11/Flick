@@ -103,6 +103,22 @@ main p {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+
+.save-job-button {
+    border: none;
+    background-color: #6b8e23;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.save-job-button:hover {
+    background-color: #58751d;
+}
+
+
 /* Job search */
 
 .job-search {

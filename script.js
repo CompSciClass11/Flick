@@ -66,3 +66,42 @@ jobCards.forEach(function (jobCard) {
 closeDialogButton.addEventListener("click", function () {
     jobDialog.close();
 });
+
+const saveJobButtons = document.querySelectorAll(".save-job-button");
+
+saveJobButtons.forEach(function (saveButton) {
+    saveButton.addEventListener("click", function (event) {
+
+        // Stop the card click from also opening the job popup.
+        event.stopPropagation();
+
+        const jobCard = saveButton.closest(".job-card");
+
+        const jobToSave = {
+            title: jobCard.dataset.title,
+            company: jobCard.dataset.company,
+            location: jobCard.dataset.location,
+            type: jobCard.dataset.type,
+            description: jobCard.dataset.description
+        };
+
+        const savedJobs =
+            JSON.parse(localStorage.getItem("savedJobs")) || [];
+
+        const alreadySaved = savedJobs.some(function (savedJob) {
+            return savedJob.title === jobToSave.title &&
+                   savedJob.company === jobToSave.company;
+        });
+
+        if (!alreadySaved) {
+            savedJobs.push(jobToSave);
+
+            localStorage.setItem(
+                "savedJobs",
+                JSON.stringify(savedJobs)
+            );
+
+            saveButton.textContent = "Saved";
+        }
+    });
+});
