@@ -318,3 +318,67 @@ main p {
 .how-steps h3 {
     color: #6b8e23;
 }
+
+
+
+/* Contact page */
+
+.contact-page {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.contact-page h2,
+.contact-page > p {
+    text-align: center;
+}
+
+.contact-form {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.contact-field {
+    margin-bottom: 20px;
+}
+
+.contact-field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.contact-field input,
+.contact-field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.contact-button {
+    border: none;
+    background-color: #333333;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-button:hover {
+    background-color: #555555;
+}
+
+.contact-note {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666666;
+}
